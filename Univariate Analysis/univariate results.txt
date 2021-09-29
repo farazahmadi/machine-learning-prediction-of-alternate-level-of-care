@@ -1,0 +1,1580 @@
+> sel_glm <- 
+c("triage", "clidecunitflag","btany", "cacsanetech", "cacsbranch",
++ "cacscode", "cacsintervention", "cacsit1", "cacsitcnt", "cacslogictype", 
++ "cacspartition", "inatloc1", "eddischdx1", "glscoma", "complaint1",
++ "consultserv1", "admcat", "age_group","dependency_q_da", "deprivation_q_da",
++ "dischdisp", "entry", "ethniccon_q_da", "female_flag", "incquint", "indexfyear",
++ "instability_q_da", "instftyp", "rural")
+
+
+[[1]] Triage
+
+Call:
+glm(formula = alc_status ~ triage, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5861  -0.5353  -0.4483  -0.4483   2.2341  
+
+Coefficients:
+            Estimate Std. Error  z value Pr(>|z|)    
+(Intercept) -2.15351    0.01180 -182.573  < 2e-16 ***
+triage2     -0.09364    0.01253   -7.474 7.81e-14 ***
+triage3      0.28303    0.01230   23.018  < 2e-16 ***
+triage4      0.39815    0.01557   25.579  < 2e-16 ***
+triage5      0.47900    0.03734   12.828  < 2e-16 ***
+triage9     -0.25608    0.06640   -3.857 0.000115 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100057  on 1527106  degrees of freedom
+Residual deviance: 1094307  on 1527101  degrees of freedom
+  (76 observations deleted due to missingness)
+AIC: 1094319
+
+Number of Fisher Scoring iterations: 4
+
+
+
+[[2]] clidecunitflag
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5078  -0.4977  -0.4977  -0.4977   2.0737  
+
+Coefficients:
+                 Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)     -2.026174   0.002568 -789.026  < 2e-16 ***
+clidecunitflagY  0.042819   0.013480    3.176  0.00149 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1100098  on 1527181  degrees of freedom
+AIC: 1100102
+
+Number of Fisher Scoring iterations: 4
+
+
+[[3]] Blood transfused
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.4995  -0.4995  -0.4995  -0.4995   2.2398  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.37627    0.25346  -9.375   <2e-16 ***
+btanyN       0.35770    0.25347   1.411    0.158    
+btanyY      -0.04722    0.25445  -0.186    0.853    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1099747  on 1527180  degrees of freedom
+AIC: 1099753
+
+Number of Fisher Scoring iterations: 4
+
+
+[[4]] cacsanetech
+
+Call:
+glm(formula = alc_status ~ cacsanetech, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5337  -0.4973  -0.4973  -0.4973   2.0754  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -2.030170   0.208593  -9.733   <2e-16 ***
+cacsanetech2  0.019644   0.220142   0.089    0.929    
+cacsanetech3  0.133184   0.209641   0.635    0.525    
+cacsanetech4  0.153409   0.210154   0.730    0.465    
+cacsanetech8  0.002344   0.208608   0.011    0.991    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1099990  on 1526982  degrees of freedom
+Residual deviance: 1099920  on 1526978  degrees of freedom
+  (200 observations deleted due to missingness)
+AIC: 1099930
+
+Number of Fisher Scoring iterations: 4
+
+
+
+[[5]] cacsbranch   
+
+Call:
+glm(formula = alc_status ~ cacsbranch, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1774  -0.5846  -0.3943  -0.3331   2.8451  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   -2.31411    0.12620 -18.337  < 2e-16 ***
+cacsbranch2   -0.21391    0.16834  -1.271 0.203820    
+cacsbranch8   -0.39394    1.04048  -0.379 0.704976    
+cacsbranch9   -0.66481    0.60515  -1.099 0.271947    
+cacsbranch10  -7.25185   18.11615  -0.400 0.688938    
+cacsbranch22  -0.24655    0.14213  -1.735 0.082787 .  
+cacsbranch23  -0.50072    0.15088  -3.319 0.000904 ***
+cacsbranch24  -1.53299    0.22891  -6.697 2.13e-11 ***
+cacsbranch25  -0.83938    0.13912  -6.033 1.61e-09 ***
+cacsbranch26   0.54330    0.14829   3.664 0.000248 ***
+cacsbranch27   0.58632    0.15321   3.827 0.000130 ***
+cacsbranch29  -0.36226    0.14721  -2.461 0.013864 *  
+cacsbranch30  -0.25084    0.36822  -0.681 0.495732    
+cacsbranch31  -0.48317    0.47762  -1.012 0.311721    
+cacsbranch36  -0.41902    0.20318  -2.062 0.039182 *  
+cacsbranch40   0.97583    0.16491   5.917 3.27e-09 ***
+cacsbranch41   0.59135    0.30740   1.924 0.054395 .  
+cacsbranch43  -7.25185   72.46296  -0.100 0.920284    
+cacsbranch45   1.46681    0.70151   2.091 0.036533 *  
+cacsbranch46   0.95199    0.14027   6.787 1.15e-11 ***
+cacsbranch47   2.31411    1.41983   1.630 0.103134    
+cacsbranch48  -1.42356    0.46977  -3.030 0.002443 ** 
+cacsbranch49   0.04543    0.61947   0.073 0.941539    
+cacsbranch50  -0.05125    0.17701  -0.290 0.772180    
+cacsbranch51   0.13087    0.39371   0.332 0.739579    
+cacsbranch52   0.54069    0.13825   3.911 9.19e-05 ***
+cacsbranch53   0.79998    0.15119   5.291 1.21e-07 ***
+cacsbranch54  -0.06190    0.26071  -0.237 0.812324    
+cacsbranch55  -0.16602    0.21654  -0.767 0.443259    
+cacsbranch56   0.39374    0.19598   2.009 0.044527 *  
+cacsbranch57  -0.44906    0.20616  -2.178 0.029393 *  
+cacsbranch58  -0.68418    0.20699  -3.305 0.000949 ***
+cacsbranch59  -1.71569    0.51997  -3.300 0.000968 ***
+cacsbranch60   1.22324    0.15378   7.955 1.80e-15 ***
+cacsbranch61  -0.51499    0.12643  -4.073 4.64e-05 ***
+cacsbranch62  -0.20126    0.12646  -1.592 0.111488    
+cacsbranch63  -0.54972    0.12653  -4.345 1.39e-05 ***
+cacsbranch64   1.21790    0.12633   9.641  < 2e-16 ***
+cacsbranch65   0.63409    0.12625   5.023 5.10e-07 ***
+cacsbranch66  -0.52315    0.22897  -2.285 0.022326 *  
+cacsbranch67   0.80352    0.19966   4.025 5.71e-05 ***
+cacsbranch999 -7.25185   51.23913  -0.142 0.887452    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1099990  on 1526982  degrees of freedom
+Residual deviance: 1039657  on 1526941  degrees of freedom
+  (200 observations deleted due to missingness)
+AIC: 1039741
+
+Number of Fisher Scoring iterations: 8
+
+
+
+[[6]] CACS code ---Null values set to NA
+
+Call:
+glm(formula = alc_status ~ cacscode, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7819  -0.5796  -0.3896  -0.3277   2.9100  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)
+(Intercept)  -9.566e+00  2.415e+01  -0.396    0.692
+cacscodeA002  7.129e+00  2.415e+01   0.295    0.768
+cacscodeA003  1.007e-07  3.521e+01   0.000    1.000
+cacscodeB001  6.729e+00  2.415e+01   0.279    0.781
+cacscodeB002  7.026e+00  2.415e+01   0.291    0.771
+cacscodeB003  6.668e+00  2.415e+01   0.276    0.782
+cacscodeB004  8.465e+00  2.415e+01   0.350    0.726
+cacscodeB005  7.867e+00  2.415e+01   0.326    0.745
+cacscodeB051  7.076e+00  2.415e+01   0.293    0.770
+cacscodeB052  7.001e+00  2.418e+01   0.290    0.772
+cacscodeB053  6.639e+00  2.416e+01   0.275    0.783
+cacscodeB054  9.938e-08  3.329e+01   0.000    1.000
+cacscodeB055  8.180e+00  2.416e+01   0.339    0.735
+cacscodeB056  6.521e+00  2.416e+01   0.270    0.787
+cacscodeB057  7.906e+00  2.416e+01   0.327    0.743
+cacscodeB101  8.092e+00  2.415e+01   0.335    0.738
+cacscodeB102  7.217e+00  2.416e+01   0.299    0.765
+cacscodeB103  7.175e+00  2.416e+01   0.297    0.766
+cacscodeB104  7.791e+00  2.415e+01   0.323    0.747
+cacscodeB108  5.346e+00  2.416e+01   0.221    0.825
+cacscodeB112  6.563e+00  2.415e+01   0.272    0.786
+cacscodeB116  7.005e+00  2.415e+01   0.290    0.772
+cacscodeB120  5.452e+00  2.416e+01   0.226    0.821
+cacscodeB121  6.639e+00  2.416e+01   0.275    0.783
+cacscodeB122  6.750e+00  2.415e+01   0.279    0.780
+cacscodeB123  7.003e+00  2.416e+01   0.290    0.772
+cacscodeB128  6.393e+00  2.415e+01   0.265    0.791
+cacscodeB132  7.826e+00  2.415e+01   0.324    0.746
+cacscodeB136  7.777e+00  2.415e+01   0.322    0.747
+cacscodeB140  7.607e+00  2.415e+01   0.315    0.753
+cacscodeB141  6.998e+00  2.416e+01   0.290    0.772
+cacscodeB145  6.561e+00  2.416e+01   0.272    0.786
+cacscodeB146  6.844e+00  2.415e+01   0.283    0.777
+cacscodeB150  6.763e+00  2.416e+01   0.280    0.780
+cacscodeB154  6.662e+00  2.416e+01   0.276    0.783
+cacscodeB160  6.730e+00  2.416e+01   0.279    0.781
+cacscodeB165  6.795e+00  2.415e+01   0.281    0.778
+cacscodeB170  8.537e+00  2.415e+01   0.353    0.724
+cacscodeB175  8.226e+00  2.415e+01   0.341    0.733
+cacscodeB176  7.817e+00  2.416e+01   0.324    0.746
+cacscodeB177  9.885e-08  7.638e+01   0.000    1.000
+cacscodeB178  9.963e-08  7.638e+01   0.000    1.000
+cacscodeB179  5.950e+00  2.416e+01   0.246    0.805
+cacscodeB180  8.254e+00  2.415e+01   0.342    0.733
+cacscodeB181  8.313e+00  2.417e+01   0.344    0.731
+cacscodeB182  8.178e+00  2.415e+01   0.339    0.735
+cacscodeB183  7.574e+00  2.416e+01   0.313    0.754
+cacscodeB184  7.551e+00  2.416e+01   0.313    0.755
+cacscodeB186  7.260e+00  2.415e+01   0.301    0.764
+cacscodeB187  7.760e+00  2.415e+01   0.321    0.748
+cacscodeB188  8.055e+00  2.415e+01   0.333    0.739
+cacscodeZ999  9.894e-08  7.638e+01   0.000    1.000
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 940881  on 1315309  degrees of freedom
+Residual deviance: 888928  on 1315258  degrees of freedom
+  (211873 observations deleted due to missingness)
+AIC: 889032
+
+Number of Fisher Scoring iterations: 8
+
+
+[[6.1]] Results when grouping all but five levels to a "Others" category
+
+nce Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7578  -0.5796  -0.3896  -0.3277   2.4296  
+
+Coefficients:
+                   Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)       -2.836904   0.008431 -336.472  < 2e-16 ***
+cacscode_grpB002   0.296841   0.012220   24.291  < 2e-16 ***
+cacscode_grpB003  -0.060817   0.013126   -4.633  3.6e-06 ***
+cacscode_grpB004   1.736160   0.010490  165.506  < 2e-16 ***
+cacscode_grpB005   1.138243   0.009314  122.211  < 2e-16 ***
+cacscode_grpOther  0.519721   0.021116   24.613  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 940881  on 1315309  degrees of freedom
+Residual deviance: 890181  on 1315304  degrees of freedom
+  (211873 observations deleted due to missingness)
+AIC: 890193
+
+Number of Fisher Scoring iterations: 5
+
+
+
+
+
+[[7]] NO USE!!!
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.1774  -0.4981  -0.4981  -0.4981   2.8616  
+
+Coefficients:
+                             Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)                 -2.024374   0.002522 -802.821   <2e-16 ***
+cacsintervention1AA13HAC2   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1AA35HA1C   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1AA35HH1C   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1CH87LAAG   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1CJ52HA     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1DA80LA     13.590427 196.967680    0.069   0.9450    
+cacsintervention1EE73JA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1EQ52LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1ET13CAGX   -9.541680  35.961214   -0.265   0.7908    
+cacsintervention1ET13GQC2   -9.541680 113.719343   -0.084   0.9331    
+cacsintervention1ET13GQW0   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1ET59BAAD   13.590427 196.967679    0.069   0.9450    
+cacsintervention1ET59BAGX   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1ET73JA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1FA52CATJ   -9.541680 113.719342   -0.084   0.9331    
+cacsintervention1FE57JA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1FG80LA     -9.541680 196.967681   -0.048   0.9614    
+cacsintervention1FX13JAGX   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1GJ50CANG   -9.541680  98.483840   -0.097   0.9228    
+cacsintervention1GV52HA     -0.683676   1.032799   -0.662   0.5080    
+cacsintervention1GV52HAHE   -9.541680  37.223393   -0.256   0.7977    
+cacsintervention1GV52HATK   -9.541680  69.638591   -0.137   0.8910    
+cacsintervention1GV52LA     -9.541680 139.277182   -0.069   0.9454    
+cacsintervention1GV52LATS   -9.541680 113.719343   -0.084   0.9331    
+cacsintervention1GZ31CAEP   -9.541680  80.411718   -0.119   0.9055    
+cacsintervention1GZ31CAND   -0.487932   0.424484   -1.149   0.2504    
+cacsintervention1GZ31CAPK   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1GZ31CBEP    0.319626   0.768710    0.416   0.6776    
+cacsintervention1GZ31CBND   -1.283733   0.587822   -2.184   0.0290 *  
+cacsintervention1GZ31CRND   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1GZ32CAMU   -9.541680 113.719342   -0.084   0.9331    
+cacsintervention1GZ32CAMV    0.152572   0.759559    0.201   0.8408    
+cacsintervention1GZ32CAMW   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1GZ32CAMX   -0.055068   1.060663   -0.052   0.9586    
+cacsintervention1GZ32CAMY   -0.417973   0.368614   -1.134   0.2568    
+cacsintervention1HZ09GRJF   -9.541680 113.719343   -0.084   0.9331    
+cacsintervention1HZ09JAFS   -0.614683   1.035101   -0.594   0.5526    
+cacsintervention1HZ09JAJF   -1.804267   1.010814   -1.785   0.0743 .  
+cacsintervention1HZ30JN     -9.541680  62.286649   -0.153   0.8782    
+cacsintervention1HZ37JANN   -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1IL35HH1C   -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1IS51GRKA   -9.541680 196.967678   -0.048   0.9614    
+cacsintervention1IS53GRLF   -0.226918   0.743396   -0.305   0.7602    
+cacsintervention1IS53HNLF   -9.541680  98.483839   -0.097   0.9228    
+cacsintervention1JQ53GRLG   -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1JW35HH1C   13.590427 196.967679    0.069   0.9450    
+cacsintervention1KG80LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1LZ19HHU1A  -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1LZ19HHU1J  -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1LZ19HHU4J  -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1LZ19HMU1   -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1NA13BAFA   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NA56BA     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1NF35CAT9   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NF52CAQN   -2.053164   1.008442   -2.036   0.0418 *  
+cacsintervention1NF52CATL   -9.541680  80.411718   -0.119   0.9055    
+cacsintervention1NF53CATS   -1.020149   1.023536   -0.997   0.3189    
+cacsintervention1NF53HATS   -9.541680 113.719342   -0.084   0.9331    
+cacsintervention1NF54HATS   -9.541680  80.411718   -0.119   0.9055    
+cacsintervention1NK53BTTS   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NK54HATS   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NK77RQ     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NM52CATS   -9.541680 196.967680   -0.048   0.9614    
+cacsintervention1NP73BA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NP73JH     -9.541680  41.993650   -0.227   0.8203    
+cacsintervention1NQ52LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NQ52LATS   -9.541680 196.967677   -0.048   0.9614    
+cacsintervention1NQ57CJ      2.024374   1.000003    2.024   0.0429 *  
+cacsintervention1NQ73CJ      1.513548   0.730301    2.072   0.0382 *  
+cacsintervention1NQ87LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1NT52LA     -9.541680  88.086623   -0.108   0.9137    
+cacsintervention1NT52LATS   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1OE52GPTS   -9.541680  98.483840   -0.097   0.9228    
+cacsintervention1OT52CQ     13.590427 196.967679    0.069   0.9450    
+cacsintervention1OT52HA     -0.614683   1.035101   -0.594   0.5526    
+cacsintervention1OT52HATS   -9.541680 113.719343   -0.084   0.9331    
+cacsintervention1OT52HHD3   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1OW50CABP   13.590427 196.967679    0.069   0.9450    
+cacsintervention1PE50BABJ   -9.541680 139.277182   -0.069   0.9454    
+cacsintervention1PE52HH     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1PM52BATS    1.513548   0.730301    2.072   0.0382 *  
+cacsintervention1PM52HHTS   -9.541680  88.086624   -0.108   0.9137    
+cacsintervention1PM52LATS   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1PQ50BABJ   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1PQ50CABJ   -9.541680 113.719343   -0.084   0.9331    
+cacsintervention1PQ55LAPZ   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1PZ21HPD4   -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1PZ21HQBR    0.232614   1.080126    0.215   0.8295    
+cacsintervention1QD72LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1RM73CACD   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1RW52LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1RY80LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1SH87LA     -9.541680 139.277182   -0.069   0.9454    
+cacsintervention1SZ52HATS   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1SZ52LA     -9.541680  98.483840   -0.097   0.9228    
+cacsintervention1TA52HA     -9.541680 113.719342   -0.084   0.9331    
+cacsintervention1TA73JA      0.638080   0.456442    1.398   0.1621    
+cacsintervention1TK73JA     -0.373521   1.044469   -0.358   0.7206    
+cacsintervention1TM52HA     -9.541680 113.719343   -0.084   0.9331    
+cacsintervention1TM73JA      0.414936   1.095448    0.379   0.7048    
+cacsintervention1TV73JA      0.448838   0.448504    1.001   0.3170    
+cacsintervention1UB73JA      0.168076   0.480891    0.350   0.7267    
+cacsintervention1UC73JA     -9.541680 113.719342   -0.084   0.9331    
+cacsintervention1UE73JA     -9.541680 139.277182   -0.069   0.9454    
+cacsintervention1UF73JA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1UJ73JA      0.925762   1.154703    0.802   0.4227    
+cacsintervention1UK73JA     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1UY52HA     13.590427 196.967679    0.069   0.9450    
+cacsintervention1UY59LAGX   -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1UY80LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1VA52HA     -9.541680 196.967680   -0.048   0.9614    
+cacsintervention1VA73JA     -0.614683   0.731929   -0.840   0.4010    
+cacsintervention1VA80LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1VC73JA      2.024374   1.000003    2.024   0.0429 *  
+cacsintervention1VG52HA      0.800598   0.508753    1.574   0.1156    
+cacsintervention1VG52WK     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention1VG73JA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1VQ73JA      0.520297   0.781740    0.666   0.5057    
+cacsintervention1VR80LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1VX52LA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1WA52HA     -9.541680 196.967678   -0.048   0.9614    
+cacsintervention1WA73JA      0.448838   0.448504    1.001   0.3170    
+cacsintervention1WE73JA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention1WJ73JA     -9.541680 196.967683   -0.048   0.9614    
+cacsintervention1YE80LA      0.638080   1.118037    0.571   0.5682    
+cacsintervention1ZZ35HA1C   -1.307831   1.017704   -1.285   0.1988    
+cacsintervention2AX13HA     -9.541680  52.641827   -0.181   0.8562    
+cacsintervention2GM70BA     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention2HZ24HAXJ   -9.541680 139.277182   -0.069   0.9454    
+cacsintervention2NA70BA     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention2NK70BABL   -9.541680  98.483840   -0.097   0.9228    
+cacsintervention2NM70BABH   -9.541680 196.967682   -0.048   0.9614    
+cacsintervention2PM70BA     -9.541680  88.086624   -0.108   0.9137    
+cacsintervention3ID10VC     -9.541680 139.277182   -0.069   0.9454    
+cacsintervention3ID10VX     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention3IM10VX     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention3KG10VX     -9.541680 139.277181   -0.069   0.9454    
+cacsintervention3OG10WZ     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention3PH10XJ     -9.541680 196.967678   -0.048   0.9614    
+cacsintervention7SC70SC     -9.541680 196.967679   -0.048   0.9614    
+cacsintervention7SC70SD     -9.541680 196.967679   -0.048   0.9614    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1099957  on 1527041  degrees of freedom
+AIC: 1100241
+
+Number of Fisher Scoring iterations: 10
+
+
+[[8]] cacsit1 --> factored
+
+Call:
+glm(formula = alc_status ~ cacsit1_fac, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6836  -0.5821  -0.4881  -0.4881   2.2854  
+
+Coefficients:
+                        Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)            -1.689298   0.004435 -380.903  < 2e-16 ***
+cacsit1_facEEG         -8.876729  45.154676   -0.197    0.844    
+cacsit1_facMammography -8.876729  45.154676   -0.197    0.844    
+cacsit1_facMRI          0.354417   0.053825    6.585 4.56e-11 ***
+cacsit1_facNuclear     -0.587019   0.116759   -5.028 4.97e-07 ***
+cacsit1_facStress_test -8.876729  14.079445   -0.630    0.528    
+cacsit1_facUltrasound  -0.845913   0.017677  -47.855  < 2e-16 ***
+cacsit1_facXray        -0.378094   0.005777  -65.443  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 883360  on 1171302  degrees of freedom
+Residual deviance: 877542  on 1171295  degrees of freedom
+  (355880 observations deleted due to missingness)
+AIC: 877558
+
+Number of Fisher Scoring iterations: 9
+
+
+
+
+[[9]] CACS Investigative Technology Count [0 to 8]
+
+
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.3795  -0.4835  -0.4835  -0.3947   2.2763  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.512917   0.004522  -555.7   <2e-16 ***
+cacsitcnt    0.425187   0.002991   142.2   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1099990  on 1526982  degrees of freedom
+Residual deviance: 1080413  on 1526981  degrees of freedom
+  (200 observations deleted due to missingness)
+AIC: 1080417
+
+Number of Fisher Scoring iterations: 5
+
+
+[[9.1]] CACS category count 1
+
+Call:
+glm(formula = alc_status ~ cacsitcnt1, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5807  -0.5078  -0.5078  -0.5078   2.0553  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -1.983222   0.003025 -655.71   <2e-16 ***
+cacsitcnt12  0.288682   0.007897   36.56   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 883360  on 1171302  degrees of freedom
+Residual deviance: 882086  on 1171301  degrees of freedom
+  (355880 observations deleted due to missingness)
+AIC: 882090
+
+Number of Fisher Scoring iterations: 4
+
+
+
+
+
+
+
+
+
+
+[[10]] CACS Logic Type --> factored (Most in one group)
+
+Call:
+glm(formula = alc_status ~ cacslogictype, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.4981  -0.4981  -0.4981  -0.4981   2.2452  
+
+Coefficients:
+               Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -2.4366     0.1196 -20.370  < 2e-16 ***
+cacslogictype1  -6.1292    15.5405  -0.394  0.69329    
+cacslogictype4   0.4122     0.1196   3.445  0.00057 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1099990  on 1526982  degrees of freedom
+Residual deviance: 1099975  on 1526980  degrees of freedom
+  (200 observations deleted due to missingness)
+AIC: 1099981
+
+Number of Fisher Scoring iterations: 7
+
+
+
+[[11]] CACS Partition (factored and cleaned)
+
+Call:
+glm(formula = alc_status ~ cacspartition, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.4995  -0.4995  -0.4995  -0.4995   2.2621  
+
+Coefficients:
+                Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)    -2.018288   0.002547 -792.476  < 2e-16 ***
+cacspartitionD -0.277606   0.018237  -15.222  < 2e-16 ***
+cacspartitionI -0.459649   0.113543   -4.048 5.16e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1099990  on 1526982  degrees of freedom
+Residual deviance: 1099723  on 1526980  degrees of freedom
+  (200 observations deleted due to missingness)
+AIC: 1099729
+
+Number of Fisher Scoring iterations: 4
+
+
+
+[[12]]
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.4823  -0.4868  -0.4868  -0.4868   2.6049  
+
+Coefficients:
+              Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)  -2.073264   0.002717 -763.079  < 2e-16 ***
+inatloc1AN   -1.285373   0.508629   -2.527 0.011500 *  
+inatloc1AP   -9.492789 196.967679   -0.048 0.961561    
+inatloc1AV   -0.871175   1.025982   -0.849 0.395818    
+inatloc1B     0.986095   0.029200   33.771  < 2e-16 ***
+inatloc1BH   -0.369083   0.737215   -0.501 0.616621    
+inatloc1BP   -9.492789 113.719343   -0.083 0.933473    
+inatloc1CT    0.756399   0.175879    4.301 1.70e-05 ***
+inatloc1CX    0.889122   0.042885   20.733  < 2e-16 ***
+inatloc1DI    0.984703   0.081798   12.038  < 2e-16 ***
+inatloc1FE    0.034831   0.200930    0.173 0.862377    
+inatloc1FT    2.766412   1.224748    2.259 0.023898 *  
+inatloc1GV   -9.492789 196.967679   -0.048 0.961561    
+inatloc1HD   -9.492789 196.967679   -0.048 0.961561    
+inatloc1IF   -0.151359   0.526341   -0.288 0.773677    
+inatloc1IN    1.225967   0.690071    1.777 0.075637 .  
+inatloc1JU   -0.088963   0.162962   -0.546 0.585125    
+inatloc1L     1.026277   0.013878   73.949  < 2e-16 ***
+inatloc1LA   -9.492789  56.859671   -0.167 0.867408    
+inatloc1LB    1.072719   0.028535   37.593  < 2e-16 ***
+inatloc1LL    0.201462   0.759559    0.265 0.790828    
+inatloc1LP   -9.492789 196.967679   -0.048 0.961561    
+inatloc1LS    1.027985   0.061938   16.597  < 2e-16 ***
+inatloc1LW   -0.696130   0.073684   -9.448  < 2e-16 ***
+inatloc1LY   -9.492789 196.967679   -0.048 0.961561    
+inatloc1M    -1.222572   1.018354   -1.201 0.229930    
+inatloc1MB   -9.492789 196.967679   -0.048 0.961561    
+inatloc1MR   -9.492789 196.967679   -0.048 0.961561    
+inatloc1PD   -0.309710   0.043594   -7.104 1.21e-12 ***
+inatloc1PE    0.127354   1.069048    0.119 0.905173    
+inatloc1PI   -0.062267   0.293294   -0.212 0.831872    
+inatloc1PL   -0.559562   0.215895   -2.592 0.009547 ** 
+inatloc1PS   -9.492789  21.490936   -0.442 0.658698    
+inatloc1R     1.021101   0.013810   73.939  < 2e-16 ***
+inatloc1RA    0.686970   1.118037    0.614 0.538923    
+inatloc1RD   -9.492789 139.277182   -0.068 0.945660    
+inatloc1RL   -0.229321   1.048812   -0.219 0.826924    
+inatloc1RP    2.073264   1.414216    1.466 0.142644    
+inatloc1RY   -9.492789  80.411718   -0.118 0.906026    
+inatloc1S     0.680740   0.176688    3.853 0.000117 ***
+inatloc1SC    0.334149   0.300739    1.111 0.266529    
+inatloc1SD   -9.492789 196.967679   -0.048 0.961561    
+inatloc1SE    0.033901   0.179712    0.189 0.850373    
+inatloc1SG   -9.492789 196.967679   -0.048 0.961561    
+inatloc1SP    1.204697   0.083057   14.505  < 2e-16 ***
+inatloc1SS   -9.492789  88.086624   -0.108 0.914181    
+inatloc1ST   -9.492789 196.967679   -0.048 0.961561    
+inatloc1TH    0.940461   0.075867   12.396  < 2e-16 ***
+inatloc1TL    1.037058   0.069489   14.924  < 2e-16 ***
+inatloc1U    -0.546592   0.029112  -18.776  < 2e-16 ***
+inatloc1UM   -9.492789 139.277182   -0.068 0.945660    
+inatloc1UN    0.324065   0.221180    1.465 0.142876    
+inatloc1UP   -0.999217   0.089412  -11.175  < 2e-16 ***
+inatloc1VE   -9.492789 196.967679   -0.048 0.961561    
+inatloc1Z    -0.609042   0.018334  -33.220  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1085467  on 1527128  degrees of freedom
+AIC: 1085577
+
+Number of Fisher Scoring iterations: 10
+
+
+[[13]]
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.6651  -0.4987  -0.4987  -0.4987   3.1840  
+
+Coefficients:
+                   Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)       -2.021707   0.002529 -799.427  < 2e-16 ***
+eddischdx1A047    -0.617350   1.035101   -0.596 0.550898    
+eddischdx1A099    -1.679595   0.715788   -2.346 0.018951 *  
+eddischdx1A419    -0.553226   0.216324   -2.557 0.010546 *  
+eddischdx1A499   -11.544359  99.423358   -0.116 0.907563    
+eddischdx1A692   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1B029   -11.544359 267.705585   -0.043 0.965603    
+eddischdx1B199    15.587774 535.411164    0.029 0.976774    
+eddischdx1B24    -11.544359 378.592868   -0.030 0.975674    
+eddischdx1B349     0.075797   1.069048    0.071 0.943476    
+eddischdx1B379   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1C189   -11.544359 143.094654   -0.081 0.935699    
+eddischdx1C259    -0.175518   0.745360   -0.235 0.813836    
+eddischdx1C3499   -0.264071   0.428512   -0.616 0.537729    
+eddischdx1C449   -11.544359 267.705585   -0.043 0.965603    
+eddischdx1C5099  -11.544359 189.296434   -0.061 0.951371    
+eddischdx1C579   -11.544359 189.296434   -0.061 0.951371    
+eddischdx1C61    -11.544359 154.559891   -0.075 0.940460    
+eddischdx1C719    -0.175518   1.054096   -0.167 0.867756    
+eddischdx1C760    -0.463200   1.040836   -0.445 0.656301    
+eddischdx1C762   -11.544359 133.852790   -0.086 0.931270    
+eddischdx1C767     1.734025   0.763767    2.270 0.023186 *  
+eddischdx1C900   -11.544359 189.296434   -0.061 0.951371    
+eddischdx1C959   -11.544359 143.094654   -0.081 0.935699    
+eddischdx1C969    -0.617350   1.035101   -0.596 0.550898    
+eddischdx1D489     0.923095   1.154703    0.799 0.424046    
+eddischdx1D649    -1.595945   0.506673   -3.150 0.001634 ** 
+eddischdx1D6938    1.328560   1.224747    1.085 0.278027    
+eddischdx1D696     1.105416   0.836664    1.321 0.186428    
+eddischdx1D700   -11.544359 161.432542   -0.072 0.942990    
+eddischdx1D759   -11.544359 535.411164   -0.022 0.982798    
+eddischdx1D899   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1E039   -11.544359 378.592866   -0.030 0.975674    
+eddischdx1E162   -11.544359 161.432542   -0.072 0.942990    
+eddischdx1E222   -11.544360 535.411188   -0.022 0.982798    
+eddischdx1E232   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1E237   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1E272   -11.544359 267.705585   -0.043 0.965603    
+eddischdx1E349   -11.544359 309.119781   -0.037 0.970209    
+eddischdx1E835     0.229948   0.540068    0.426 0.670271    
+eddischdx1E860    -0.073239   0.374688   -0.195 0.845028    
+eddischdx1E870    -0.463200   1.040836   -0.445 0.656301    
+eddischdx1E871    -1.084373   0.417296   -2.599 0.009361 ** 
+eddischdx1E875    -0.420640   0.521292   -0.807 0.419714    
+eddischdx1E876    -1.197169   1.019807   -1.174 0.240428    
+eddischdx1E877   -11.544359 239.443155   -0.048 0.961546    
+eddischdx1E889     0.722424   0.651344    1.109 0.267375    
+eddischdx1F03      1.510881   0.730301    2.069 0.038560 *  
+eddischdx1F059     0.621426   0.132526    4.689 2.74e-06 ***
+eddischdx1F100     1.328560   1.224747    1.085 0.278027    
+eddischdx1F103    -0.686343   1.032799   -0.665 0.506340    
+eddischdx1F199   -11.544359 378.592868   -0.030 0.975674    
+eddischdx1F209   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1F239     3.120319   1.154703    2.702 0.006887 ** 
+eddischdx1F329     2.021707   1.414216    1.430 0.152843    
+eddischdx1F419   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1G009   -11.544359 535.411162   -0.022 0.982798    
+eddischdx1G049   -11.544359 378.592868   -0.030 0.975674    
+eddischdx1G060   -11.544359 535.411165   -0.022 0.982798    
+eddischdx1G062   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1G20      2.021707   1.000003    2.022 0.043207 *  
+eddischdx1G35      1.616242   0.912874    1.770 0.076644 .  
+eddischdx1G419   -11.544359 218.580695   -0.053 0.957879    
+eddischdx1G439   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1G448   -11.544359 309.119783   -0.037 0.970209    
+eddischdx1G454   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1G459    -1.575605   0.716732   -2.198 0.027926 *  
+eddischdx1G500   -11.544359 378.592877   -0.030 0.975674    
+eddischdx1G510   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1G529   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1G530   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1G610   -11.544359 535.411183   -0.022 0.982798    
+eddischdx1G629   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1G700   -11.544359 202.366400   -0.057 0.954508    
+eddischdx1G729   -11.544359 378.592869   -0.030 0.975674    
+eddischdx1G834     1.328560   1.224747    1.085 0.278027    
+eddischdx1G919   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1G934   -11.544359 133.852792   -0.086 0.931270    
+eddischdx1G959     1.105416   0.836664    1.321 0.186428    
+eddischdx1G969     0.635413   0.790573    0.804 0.421549    
+eddischdx1H029   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1H113   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1H160   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1H210   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1H409   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1H532     2.021707   1.414216    1.430 0.152843    
+eddischdx1H579   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1H612   -11.544359 535.411173   -0.022 0.982798    
+eddischdx1H813   -11.544359 154.559891   -0.075 0.940460    
+eddischdx1H814    -0.974025   1.024698   -0.951 0.341834    
+eddischdx1H920   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1I099   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1I100   -11.544359 267.705583   -0.043 0.965603    
+eddischdx1I101   -11.544359  85.734403   -0.135 0.892887    
+eddischdx1I200    -2.107729   0.381002   -5.532 3.16e-08 ***
+eddischdx1I209    -0.840494   0.727034   -1.156 0.247657    
+eddischdx1I219    -0.993073   0.200885   -4.943 7.67e-07 ***
+eddischdx1I269    -0.750882   0.515394   -1.457 0.145142    
+eddischdx1I309   -11.544359 267.705584   -0.043 0.965603    
+eddischdx1I313    -1.561812   1.013797   -1.541 0.123425    
+eddischdx1I339   -11.544359 267.705585   -0.043 0.965603    
+eddischdx1I409   -11.544360 378.592876   -0.030 0.975674    
+eddischdx1I429   -11.544360 378.592892   -0.030 0.975674    
+eddischdx1I441    -1.641855   1.012743   -1.621 0.104976    
+eddischdx1I442   -11.544359 109.290347   -0.106 0.915876    
+eddischdx1I469    -1.667172   1.012426   -1.647 0.099618 .  
+eddischdx1I471   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1I472    -1.561812   1.013797   -1.541 0.123425    
+eddischdx1I480   -11.544359 122.831746   -0.094 0.925121    
+eddischdx1I481   -11.544359 202.366400   -0.057 0.954508    
+eddischdx1I4890   -0.617350   0.312104   -1.978 0.047926 *  
+eddischdx1I4891   -1.948585   1.009393   -1.930 0.053551 .  
+eddischdx1I495   -11.544359 239.443153   -0.048 0.961546    
+eddischdx1I499    -0.175518   0.527052   -0.333 0.739121    
+eddischdx1I500    -0.986448   0.170751   -5.777 7.60e-09 ***
+eddischdx1I609    -1.069335   1.022478   -1.046 0.295641    
+eddischdx1I619     0.363479   0.385767    0.942 0.346077    
+eddischdx1I620     0.229948   0.540068    0.426 0.670271    
+eddischdx1I64      0.525956   0.135190    3.891 0.000100 ***
+eddischdx1I674    -0.057734   1.060663   -0.054 0.956591    
+eddischdx1I710    -0.280878   1.048812   -0.268 0.788849    
+eddischdx1I719    -1.412280   1.016004   -1.390 0.164519    
+eddischdx1I728   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1I739    -0.840494   0.727034   -1.156 0.247657    
+eddischdx1I749     0.635413   1.118037    0.568 0.569812    
+eddischdx1I779   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1I809    -0.175518   1.054096   -0.167 0.867756    
+eddischdx1I849   -11.544359 535.411173   -0.022 0.982798    
+eddischdx1I850   -11.544359 309.119783   -0.037 0.970209    
+eddischdx1I959    -0.511990   0.464628   -1.102 0.270490    
+eddischdx1I99    -11.544359 103.039927   -0.112 0.910793    
+eddischdx1J029   -11.544359 378.592869   -0.030 0.975674    
+eddischdx1J039   -11.544360 535.411177   -0.022 0.982798    
+eddischdx1J041   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1J051     0.923095   1.154703    0.799 0.424046    
+eddischdx1J069   -11.544359 535.411165   -0.022 0.982798    
+eddischdx1J118   -11.544359 143.094654   -0.081 0.935699    
+eddischdx1J189    -0.890834   0.136028   -6.549 5.80e-11 ***
+eddischdx1J209   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1J36    -11.544359 535.411169   -0.022 0.982798    
+eddischdx1J390   -11.544359 535.411172   -0.022 0.982798    
+eddischdx1J440    -1.533641   0.717142   -2.139 0.032472 *  
+eddischdx1J441    -1.525033   0.226820   -6.724 1.77e-11 ***
+eddischdx1J4590  -11.544359 107.082234   -0.108 0.914148    
+eddischdx1J47      0.635413   1.118037    0.568 0.569812    
+eddischdx1J690    -0.406041   0.602289   -0.674 0.500207    
+eddischdx1J80    -11.544359 535.411171   -0.022 0.982798    
+eddischdx1J90     -1.207119   0.509811   -2.368 0.017895 *  
+eddischdx1J939    -0.106525   0.473092   -0.225 0.821849    
+eddischdx1J949     0.923095   1.154703    0.799 0.424046    
+eddischdx1J9609   -1.691865   1.012125   -1.672 0.094604 .  
+eddischdx1J9619  -11.544359 239.443154   -0.048 0.961546    
+eddischdx1J985   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1J989    -0.617350   1.035101   -0.596 0.550898    
+eddischdx1K119   -11.544359 535.411147   -0.022 0.982798    
+eddischdx1K20    -11.544359 239.443154   -0.048 0.961546    
+eddischdx1K222   -11.544359 169.311877   -0.068 0.945639    
+eddischdx1K223   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1K229   -11.544359 535.411164   -0.022 0.982798    
+eddischdx1K279   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1K299     0.923095   1.154703    0.799 0.424046    
+eddischdx1K30    -11.544359 535.411174   -0.022 0.982798    
+eddischdx1K358   -11.544359  62.240284   -0.185 0.852852    
+eddischdx1K409   -11.544359 239.443153   -0.048 0.961546    
+eddischdx1K429   -11.544359 535.411172   -0.022 0.982798    
+eddischdx1K469    -1.113787   0.722320   -1.542 0.123084    
+eddischdx1K509   -11.544359 202.366401   -0.057 0.954508    
+eddischdx1K519   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1K529   -11.544359 107.082234   -0.108 0.914148    
+eddischdx1K559    -1.236389   1.019052   -1.213 0.225025    
+eddischdx1K562     0.229948   0.623615    0.369 0.712326    
+eddischdx1K566    -1.515103   0.271135   -5.588 2.30e-08 ***
+eddischdx1K567   -11.544359 309.119783   -0.037 0.970209    
+eddischdx1K578    -1.929537   1.009573   -1.911 0.055974 .  
+eddischdx1K579   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1K590   -11.544359 267.705584   -0.043 0.965603    
+eddischdx1K612   -11.544359 267.705584   -0.043 0.965603    
+eddischdx1K623   -11.544359 309.119783   -0.037 0.970209    
+eddischdx1K629   -11.544359 378.592867   -0.030 0.975674    
+eddischdx1K631     0.412269   0.489904    0.842 0.400051    
+eddischdx1K649   -11.544359 535.411172   -0.022 0.982798    
+eddischdx1K650     0.412269   0.774601    0.532 0.594564    
+eddischdx1K729   -11.544359 239.443153   -0.048 0.961546    
+eddischdx1K746     0.075797   1.069048    0.071 0.943476    
+eddischdx1K769    -0.811506   1.028995   -0.789 0.430322    
+eddischdx1K8050  -11.544359  77.279946   -0.149 0.881251    
+eddischdx1K8080  -11.544359 114.150045   -0.101 0.919445    
+eddischdx1K810    -2.261879   0.711971   -3.177 0.001488 ** 
+eddischdx1K830   -11.544359 378.592867   -0.030 0.975674    
+eddischdx1K8308  -11.544359 111.640946   -0.103 0.917641    
+eddischdx1K839    -0.463200   1.040836   -0.445 0.656301    
+eddischdx1K869   -11.544359 218.580694   -0.053 0.957879    
+eddischdx1K919   -11.544359 378.592868   -0.030 0.975674    
+eddischdx1K922    -1.370358   0.216772   -6.322 2.59e-10 ***
+eddischdx1K929     0.412269   1.095448    0.376 0.706659    
+eddischdx1L029   -11.544359 126.197623   -0.091 0.927112    
+eddischdx1L0300  -11.544359 535.411171   -0.022 0.982798    
+eddischdx1L039    -0.086722   0.256852   -0.338 0.735639    
+eddischdx1L519   -11.544359 378.592867   -0.030 0.975674    
+eddischdx1L899   -11.544359 535.411171   -0.022 0.982798    
+eddischdx1L989    -0.175518   1.054096   -0.167 0.867756    
+eddischdx1M0099   -0.057734   0.612378   -0.094 0.924887    
+eddischdx1M069   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1M1099  -11.544359 154.559891   -0.075 0.940460    
+eddischdx1M1399   -0.543242   1.037752   -0.523 0.600640    
+eddischdx1M2509  -11.544359 535.411165   -0.022 0.982798    
+eddischdx1M2559    2.021707   1.000003    2.022 0.043207 *  
+eddischdx1M329   -11.544359 535.411173   -0.022 0.982798    
+eddischdx1M353   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1M4809    1.328560   1.224747    1.085 0.278027    
+eddischdx1M543   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1M545     0.347731   0.629158    0.553 0.580474    
+eddischdx1M6269    1.328560   1.224747    1.085 0.278027    
+eddischdx1M6299    0.692571   0.374872    1.847 0.064677 .  
+eddischdx1M6599  -11.544359 535.411170   -0.022 0.982798    
+eddischdx1M6659  -11.544359 378.592870   -0.030 0.975674    
+eddischdx1M7969  -11.544359 535.411168   -0.022 0.982798    
+eddischdx1M8699  -11.544359 154.559891   -0.075 0.940460    
+eddischdx1M8999   15.587774 535.411173    0.029 0.976774    
+eddischdx1N009   -11.544359 535.411172   -0.022 0.982798    
+eddischdx1N10     -0.719133   0.729565   -0.986 0.324280    
+eddischdx1N12    -11.544359 267.705586   -0.043 0.965603    
+eddischdx1N139   -11.544359 218.580694   -0.053 0.957879    
+eddischdx1N179    -0.400679   0.314611   -1.274 0.202816    
+eddischdx1N189   -11.544359 239.443154   -0.048 0.961546    
+eddischdx1N209   -11.544359 309.119781   -0.037 0.970209    
+eddischdx1N23    -11.544359 116.836296   -0.099 0.921291    
+eddischdx1N289    -1.197169   1.019807   -1.174 0.240428    
+eddischdx1N390    -0.179782   0.206696   -0.870 0.384416    
+eddischdx1N399   -11.544359 218.580695   -0.053 0.957879    
+eddischdx1N433   -11.544359 535.411171   -0.022 0.982798    
+eddischdx1N4592  -11.544359 239.443154   -0.048 0.961546    
+eddischdx1N739   -11.544359 535.411138   -0.022 0.982798    
+eddischdx1N751   -11.544359 535.411156   -0.022 0.982798    
+eddischdx1N939   -11.544359 239.443154   -0.048 0.961546    
+eddischdx1O47903  15.587774 535.411167    0.029 0.976774    
+eddischdx1P229   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1P599   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1Q400   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1Q430   -11.544359 535.411171   -0.022 0.982798    
+eddischdx1Q999   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1R000   -11.544359 138.242569   -0.084 0.933448    
+eddischdx1R001    -2.113459   0.712746   -2.965 0.003025 ** 
+eddischdx1R002   -11.544359 138.242568   -0.084 0.933448    
+eddischdx1R040   -11.544359 161.432541   -0.072 0.942990    
+eddischdx1R042    -0.781653   0.728223   -1.073 0.283105    
+eddischdx1R05    -11.544359 267.705585   -0.043 0.965603    
+eddischdx1R060    -0.824033   0.274926   -2.997 0.002724 ** 
+eddischdx1R061   -11.544359 267.705584   -0.043 0.965603    
+eddischdx1R066   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1R074    -1.812354   0.505383   -3.586 0.000336 ***
+eddischdx1R092     0.412269   0.774601    0.532 0.594564    
+eddischdx1R100   -11.544359 154.559891   -0.075 0.940460    
+eddischdx1R104    -3.040888   1.003163   -3.031 0.002435 ** 
+eddischdx1R113   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1R138    -1.069335   1.022478   -1.046 0.295641    
+eddischdx1R17    -11.544359  94.648217   -0.122 0.902922    
+eddischdx1R18     -1.197169   1.019807   -1.174 0.240428    
+eddischdx1R208   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1R21    -11.544359 202.366398   -0.057 0.954508    
+eddischdx1R229   -11.544359 378.592869   -0.030 0.975674    
+eddischdx1R2688  -11.544359 378.592869   -0.030 0.975674    
+eddischdx1R318    -1.076883   0.417363   -2.580 0.009874 ** 
+eddischdx1R33     -0.729828   0.595497   -1.226 0.220357    
+eddischdx1R400    -0.187788   0.351159   -0.535 0.592812    
+eddischdx1R4029  -11.544359 378.592867   -0.030 0.975674    
+eddischdx1R410     0.384098   0.413088    0.930 0.352463    
+eddischdx1R42    -11.544359 154.559891   -0.075 0.940460    
+eddischdx1R443   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1R458     2.021707   1.000003    2.022 0.043207 *  
+eddischdx1R509    -1.032294   0.457647   -2.256 0.024092 *  
+eddischdx1R51    -11.544359 138.242569   -0.084 0.933448    
+eddischdx1R53      0.545029   0.182226    2.991 0.002781 ** 
+eddischdx1R55     -1.796005   0.412718   -4.352 1.35e-05 ***
+eddischdx1R5688    0.130857   0.379308    0.345 0.730103    
+eddischdx1R570   -11.544359 267.705585   -0.043 0.965603    
+eddischdx1R571     1.328560   1.224747    1.085 0.278027    
+eddischdx1R579    -0.229585   0.743396   -0.309 0.757449    
+eddischdx1R58    -11.544359 309.119782   -0.037 0.970209    
+eddischdx1R599   -11.544359 535.411165   -0.022 0.982798    
+eddischdx1R600   -11.544359 378.592869   -0.030 0.975674    
+eddischdx1R630   -11.544359 309.119784   -0.037 0.970209    
+eddischdx1R64      0.768944   0.566952    1.356 0.175011    
+eddischdx1R69     -0.246976   0.606484   -0.407 0.683841    
+eddischdx1R799    -1.715963   1.011838   -1.696 0.089907 .  
+eddischdx1R938    15.587774 535.411166    0.029 0.976774    
+eddischdx1R948   -11.544359 535.411167   -0.022 0.982798    
+eddischdx1S009   -11.544359 378.592867   -0.030 0.975674    
+eddischdx1S0100  -11.544359 535.411172   -0.022 0.982798    
+eddischdx1S0190    2.714854   1.224747    2.217 0.026646 *  
+eddischdx1S02900 -11.544359 309.119782   -0.037 0.970209    
+eddischdx1S059   -11.544359 535.411171   -0.022 0.982798    
+eddischdx1S060     1.105416   0.836664    1.321 0.186428    
+eddischdx1S0635    1.174409   0.690070    1.702 0.088780 .  
+eddischdx1S064   -11.544359 267.705583   -0.043 0.965603    
+eddischdx1S065     0.387577   0.386519    1.003 0.315988    
+eddischdx1S12900  -0.057734   1.060663   -0.054 0.956591    
+eddischdx1S136   -11.544359 535.411166   -0.022 0.982798    
+eddischdx1S208   -11.544359 535.411168   -0.022 0.982798    
+eddischdx1S22090   0.923095   1.154703    0.799 0.424046    
+eddischdx1S22200 -11.544359 378.592870   -0.030 0.975674    
+eddischdx1S22300 -11.544359 378.592866   -0.030 0.975674    
+eddischdx1S22301   2.021707   1.000003    2.022 0.043207 *  
+eddischdx1S22490  -1.022815   1.023536   -0.999 0.317651    
+eddischdx1S22500 -11.544359 378.592866   -0.030 0.975674    
+eddischdx1S27200 -11.544359 378.592870   -0.030 0.975674    
+eddischdx1S27201 -11.544359 378.592867   -0.030 0.975674    
+eddischdx1S27300 -11.544359 535.411169   -0.022 0.982798    
+eddischdx1S32090  -0.057734   1.060663   -0.054 0.956591    
+eddischdx1S32100 -11.544359 535.411148   -0.022 0.982798    
+eddischdx1S32400   1.105416   0.836664    1.321 0.186428    
+eddischdx1S32800   1.950248   0.267444    7.292 3.05e-13 ***
+eddischdx1S3438  -11.544359 535.411170   -0.022 0.982798    
+eddischdx1S36990   0.635413   1.118037    0.568 0.569812    
+eddischdx1S42090 -11.544359 535.411169   -0.022 0.982798    
+eddischdx1S42290   0.229948   1.080126    0.213 0.831413    
+eddischdx1S42390   2.244851   0.670825    3.346 0.000819 ***
+eddischdx1S42490 -11.544359 309.119782   -0.037 0.970209    
+eddischdx1S42491 -11.544359 535.411171   -0.022 0.982798    
+eddischdx1S43090 -11.544359 378.592870   -0.030 0.975674    
+eddischdx1S52000 -11.544359 309.119783   -0.037 0.970209    
+eddischdx1S52001  15.587773 535.411151    0.029 0.976774    
+eddischdx1S52500 -11.544359 535.411167   -0.022 0.982798    
+eddischdx1S52501 -11.544359 378.592867   -0.030 0.975674    
+eddischdx1S52900   2.021707   1.414216    1.430 0.152843    
+eddischdx1S52901 -11.544359 309.119779   -0.037 0.970209    
+eddischdx1S6101  -11.544359 535.411164   -0.022 0.982798    
+eddischdx1S62190  15.587774 535.411169    0.029 0.976774    
+eddischdx1S62591 -11.544359 535.411172   -0.022 0.982798    
+eddischdx1S6369  -11.544359 535.411167   -0.022 0.982798    
+eddischdx1S681   -11.544359 535.411171   -0.022 0.982798    
+eddischdx1S72190   1.643945   0.083149   19.771  < 2e-16 ***
+eddischdx1S72900   0.861537   0.250102    3.445 0.000572 ***
+eddischdx1S73090   0.347731   0.629158    0.553 0.580474    
+eddischdx1S8190  -11.544359 535.411169   -0.022 0.982798    
+eddischdx1S82000   1.798564   0.670825    2.681 0.007338 ** 
+eddischdx1S82401  15.587774 535.411172    0.029 0.976774    
+eddischdx1S82890   1.551703   0.403121    3.849 0.000118 ***
+eddischdx1S82891 -11.544359 378.592866   -0.030 0.975674    
+eddischdx1S82900   0.517630   0.781740    0.662 0.507875    
+eddischdx1S9130  -11.544359 535.411164   -0.022 0.982798    
+eddischdx1S9131  -11.544359 535.411168   -0.022 0.982798    
+eddischdx1S92000 -11.544359 378.592870   -0.030 0.975674    
+eddischdx1S92290 -11.544359 378.592866   -0.030 0.975674    
+eddischdx1T009     1.328560   1.224747    1.085 0.278027    
+eddischdx1T0290  -11.544359 535.411169   -0.022 0.982798    
+eddischdx1T179   -11.544359 535.411170   -0.022 0.982798    
+eddischdx1T181   -11.544359 178.470390   -0.065 0.948425    
+eddischdx1T290    15.587774 535.411167    0.029 0.976774    
+eddischdx1T301   -11.544359 309.119781   -0.037 0.970209    
+eddischdx1T302   -11.544359 309.119782   -0.037 0.970209    
+eddischdx1T303   -11.544359 378.592867   -0.030 0.975674    
+eddischdx1T399     1.328560   1.224747    1.085 0.278027    
+eddischdx1T406   -11.544359 202.366400   -0.057 0.954508    
+eddischdx1T424   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1T469   -11.544359 239.443154   -0.048 0.961546    
+eddischdx1T509   -11.544359 178.470390   -0.065 0.948425    
+eddischdx1T510   -11.544359 267.705584   -0.043 0.965603    
+eddischdx1T599   -11.544359 378.592869   -0.030 0.975674    
+eddischdx1T66    -11.544359 535.411166   -0.022 0.982798    
+eddischdx1T68      2.021707   1.414216    1.430 0.152843    
+eddischdx1T782     0.923095   1.154703    0.799 0.424046    
+eddischdx1T783   -11.544359 378.592867   -0.030 0.975674    
+eddischdx1T784   -11.544359 267.705584   -0.043 0.965603    
+eddischdx1T793     1.328560   1.224747    1.085 0.278027    
+eddischdx1T814    -2.521588   1.005308   -2.508 0.012132 *  
+eddischdx1T859    -0.543242   1.037752   -0.523 0.600640    
+eddischdx1T887   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1T889   -11.544359 202.366404   -0.057 0.954508    
+eddischdx1Z016   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1Z017   -11.544359 535.411169   -0.022 0.982798    
+eddischdx1Z099   -11.544359 239.443153   -0.048 0.961546    
+eddischdx1Z488   -11.544359 535.411171   -0.022 0.982798    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1098544  on 1526810  degrees of freedom
+AIC: 1099290
+
+Number of Fisher Scoring iterations: 12
+
+
+[[14]]
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6742  -0.6742  -0.5768  -0.5692   1.9583  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -1.7707961  0.0326593 -54.220  < 2e-16 ***
+glscoma      0.0040918  0.0005315   7.699 1.38e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 13232  on 14580  degrees of freedom
+Residual deviance: 13173  on 14579  degrees of freedom
+  (1512602 observations deleted due to missingness)
+AIC: 13177
+
+Number of Fisher Scoring iterations: 4
+
+
+
+[[14.1]] Factored and grouped version
+
+    Mild Moderate   Notapp   Severe 
+    7162     1409  1517299     1313 
+
+
+Call:
+glm(formula = alc_status ~ glscoma, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.6139  -0.4975  -0.4975  -0.4975   2.1990  
+
+Coefficients:
+                 Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)     -2.026944   0.002531 -800.741  < 2e-16 ***
+glscomaMild      0.376053   0.032251   11.660  < 2e-16 ***
+glscomaModerate  0.453690   0.070679    6.419 1.37e-10 ***
+glscomaSevere   -0.297620   0.096876   -3.072  0.00213 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1099936  on 1527179  degrees of freedom
+AIC: 1099944
+
+Number of Fisher Scoring iterations: 4
+
+
+
+
+[[15]] complaint1_grp ---> complaint1 grouped and factored based on 20 highest freq
+
+Call:
+glm(formula = alc_status ~ complaint1_grp, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.8699  -0.5141  -0.3849  -0.3166   2.6510  
+
+Coefficients:
+                     Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)          -2.96793    0.01659 -178.895  < 2e-16 ***
+complaint1_grp257     0.37479    0.03038   12.338  < 2e-16 ***
+complaint1_grp260    -0.15707    0.04247   -3.698 0.000217 ***
+complaint1_grp3      -0.51576    0.02889  -17.854  < 2e-16 ***
+complaint1_grp4       0.16545    0.04029    4.107 4.01e-05 ***
+complaint1_grp401     1.06307    0.02456   43.281  < 2e-16 ***
+complaint1_grp402     1.70191    0.02307   73.770  < 2e-16 ***
+complaint1_grp403     0.52892    0.03743   14.132  < 2e-16 ***
+complaint1_grp407     1.60689    0.02907   55.278  < 2e-16 ***
+complaint1_grp409     1.40179    0.02255   62.163  < 2e-16 ***
+complaint1_grp5       0.01871    0.04129    0.453 0.650489    
+complaint1_grp551     1.66015    0.02557   64.933  < 2e-16 ***
+complaint1_grp555     1.80154    0.02222   81.067  < 2e-16 ***
+complaint1_grp557     2.19102    0.01987  110.241  < 2e-16 ***
+complaint1_grp651     0.34192    0.01966   17.389  < 2e-16 ***
+complaint1_grp653     0.35964    0.03835    9.378  < 2e-16 ***
+complaint1_grp7       1.42823    0.01878   76.032  < 2e-16 ***
+complaint1_grp8       0.55564    0.02985   18.613  < 2e-16 ***
+complaint1_grp852     0.42086    0.02859   14.718  < 2e-16 ***
+complaint1_grp855     0.40252    0.03153   12.766  < 2e-16 ***
+complaint1_grp999     0.85424    0.02272   37.591  < 2e-16 ***
+complaint1_grpOthers  1.01095    0.01812   55.805  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 656136  on 922374  degrees of freedom
+Residual deviance: 615741  on 922353  degrees of freedom
+  (604808 observations deleted due to missingness)
+AIC: 615785
+
+Number of Fisher Scoring iterations: 6
+
+
+
+
+
+[[16]] consultserv1_grp ----> factored and grouped based on highest freq
+
+Call:
+glm(formula = alc_status ~ consultserv_grp, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.8412  -0.5120  -0.5120  -0.3152   2.6341  
+
+Coefficients:
+                       Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)           -1.688475   0.009122 -185.096   <2e-16 ***
+consultserv_grp10     -0.277094   0.010077  -27.499   <2e-16 ***
+consultserv_grp12     -1.365114   0.020728  -65.858   <2e-16 ***
+consultserv_grp15     -1.114752   0.035373  -31.514   <2e-16 ***
+consultserv_grp16     -0.625419   0.034772  -17.986   <2e-16 ***
+consultserv_grp17      0.240230   0.020985   11.448   <2e-16 ***
+consultserv_grp18     -0.613413   0.029142  -21.049   <2e-16 ***
+consultserv_grp30     -1.288915   0.017160  -75.111   <2e-16 ***
+consultserv_grp32      0.195922   0.023699    8.267   <2e-16 ***
+consultserv_grp34      0.831717   0.012321   67.506   <2e-16 ***
+consultserv_grp37     -0.647160   0.036678  -17.644   <2e-16 ***
+consultserv_grp39     -1.749259   0.039776  -43.977   <2e-16 ***
+consultserv_grp55     -0.410255   0.028934  -14.179   <2e-16 ***
+consultserv_grp74     -0.516147   0.031089  -16.602   <2e-16 ***
+consultserv_grpOthers -0.449469   0.019156  -23.464   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 746806  on 1007230  degrees of freedom
+Residual deviance: 714627  on 1007216  degrees of freedom
+  (519952 observations deleted due to missingness)
+AIC: 714657
+
+Number of Fisher Scoring iterations: 5
+
+
+[[17]] admcat 
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.4987  -0.4987  -0.4987  -0.4987   2.2300  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.39951    0.03114 -77.061   <2e-16 ***
+admcatN     -4.16433   16.18101  -0.257    0.797    
+admcatU      0.37776    0.03124  12.092   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1099946  on 1527180  degrees of freedom
+AIC: 1099952
+
+Number of Fisher Scoring iterations: 5
+
+
+[[18]] age_group ---> turned to integer
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.8706  -0.5293  -0.4508  -0.3920   2.3019  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -5.7404722  0.0243462  -235.8   <2e-16 ***
+age_group    0.0486832  0.0003125   155.8   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1076020  on 1527181  degrees of freedom
+AIC: 1076024
+
+Number of Fisher Scoring iterations: 5
+
+
+[[19]] dependency
+
+Call:
+glm(formula = alc_status ~ dependency_q_da, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5099  -0.5099  -0.4918  -0.4908   2.0862  
+
+Coefficients:
+                   Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)      -2.0552403  0.0075997 -270.437   <2e-16 ***
+dependency_q_da2  0.0243554  0.0101214    2.406   0.0161 *  
+dependency_q_da3  0.0038189  0.0097571    0.391   0.6955    
+dependency_q_da4 -0.0005213  0.0094147   -0.055   0.9558    
+dependency_q_da5  0.0805481  0.0086787    9.281   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1088291  on 1508685  degrees of freedom
+Residual deviance: 1088084  on 1508681  degrees of freedom
+  (18497 observations deleted due to missingness)
+AIC: 1088094
+
+Number of Fisher Scoring iterations: 4
+
+
+
+
+[[20]] deprivation
+
+
+Call:
+glm(formula = alc_status ~ deprivation_q_da, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5186  -0.4995  -0.4915  -0.4877   2.0920  
+
+Coefficients:
+                    Estimate Std. Error  z value Pr(>|z|)    
+(Intercept)       -2.0689460  0.0064689 -319.828  < 2e-16 ***
+deprivation_q_da2 -0.0003884  0.0088642   -0.044   0.9651    
+deprivation_q_da3  0.0162611  0.0086349    1.883   0.0597 .  
+deprivation_q_da4  0.0507403  0.0084418    6.011 1.85e-09 ***
+deprivation_q_da5  0.1304144  0.0081757   15.951  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1088291  on 1508685  degrees of freedom
+Residual deviance: 1087874  on 1508681  degrees of freedom
+  (18497 observations deleted due to missingness)
+AIC: 1087884
+
+Number 
+
+[[21]] dischdisp   
+
+
+
+[[22]]
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5041  -0.5041  -0.5041  -0.5041   2.6207  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -2.9100     0.1022 -28.481  < 2e-16 ***
+entryD        0.2178     0.1034   2.105 0.035290 *  
+entryE        0.9112     0.1022   8.915  < 2e-16 ***
+entryN       -3.6539    16.1813  -0.226 0.821351    
+entryP       -0.4912     0.1338  -3.670 0.000242 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1097429  on 1527178  degrees of freedom
+AIC: 1097439
+
+Number of Fisher Scoring iterations: 5
+
+
+[[23]] ethnicity
+
+Call:
+glm(formula = alc_status ~ ethniccon_q_da, family = "binomial", 
+    data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5288  -0.5173  -0.4932  -0.4621   2.1401  
+
+Coefficients:
+                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)     -2.183212   0.005380 -405.78   <2e-16 ***
+ethniccon_q_da2  0.137800   0.007642   18.03   <2e-16 ***
+ethniccon_q_da3  0.239449   0.007872   30.42   <2e-16 ***
+ethniccon_q_da4  0.286608   0.007959   36.01   <2e-16 ***
+ethniccon_q_da5  0.194832   0.008064   24.16   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1088291  on 1508685  degrees of freedom
+Residual deviance: 1086680  on 1508681  degrees of freedom
+  (18497 observations deleted due to missingness)
+AIC: 1086690
+
+Number of Fisher Scoring iterations: 4
+
+
+
+[[24]] FEMALE _FLG
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5282  -0.5282  -0.4634  -0.4634   2.1376  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -2.177181   0.003869 -562.70   <2e-16 ***
+female_flag  0.278191   0.005104   54.51   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1097109  on 1527181  degrees of freedom
+AIC: 1097113
+
+Number of Fisher Scoring iterations: 4
+
+
+[[25]] INCOME
+
+
+Call:
+glm(formula = alc_status ~ incquint, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5119  -0.5035  -0.4909  -0.4908   2.0863  
+
+Coefficients:
+             Estimate Std. Error  z value Pr(>|z|)    
+(Intercept) -1.966034   0.005221 -376.562  < 2e-16 ***
+incquint2   -0.035401   0.007539   -4.695 2.66e-06 ***
+incquint3   -0.089149   0.007815  -11.408  < 2e-16 ***
+incquint4   -0.089422   0.007857  -11.381  < 2e-16 ***
+incquint5   -0.089955   0.007964  -11.295  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1095564  on 1519834  degrees of freedom
+Residual deviance: 1095339  on 1519830  degrees of freedom
+  (7348 observations deleted due to missingness)
+AIC: 1095349
+
+Number of Fisher Scoring iterations: 4
+
+
+
+[[26]] year?
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5465  -0.5210  -0.4887  -0.4656   2.1620  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept) 66.5553484  1.3542912   49.14   <2e-16 ***
+indexfyear  -0.0341225  0.0006739  -50.63   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1097543  on 1527181  degrees of freedom
+AIC: 1097547
+
+Number of Fisher Scoring iterations: 4
+
+
+[[27]]
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5345  -0.5345  -0.4873  -0.4650   2.1758  
+
+Coefficients:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)      -2.367448   0.007227 -327.59   <2e-16 ***
+instability_q_da  0.098789   0.001899   52.02   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1088291  on 1508685  degrees of freedom
+Residual deviance: 1085537  on 1508684  degrees of freedom
+  (18497 observations deleted due to missingness)
+AIC: 1085541
+
+Number of Fisher Scoring iterations: 4
+
+
+[[28]] Institution from type (Cihi)
+
+Call:
+glm(formula = formula, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.9246  -0.4987  -0.4987  -0.4036   2.4581  
+
+Coefficients:
+             Estimate Std. Error  z value Pr(>|z|)    
+(Intercept) -2.021807   0.002929 -690.309  < 2e-16 ***
+instftyp0   -0.949409   0.128188   -7.406 1.30e-13 ***
+instftyp1   -0.445151   0.022114  -20.130  < 2e-16 ***
+instftyp2    1.078733   0.033051   32.638  < 2e-16 ***
+instftyp3    0.543984   0.033068   16.450  < 2e-16 ***
+instftyp4   -0.820896   0.016290  -50.393  < 2e-16 ***
+instftyp5    0.195346   0.099234    1.969    0.049 *  
+instftyp6    0.544264   0.039663   13.722  < 2e-16 ***
+instftyp7    1.393198   0.085909   16.217  < 2e-16 ***
+instftyp8    0.835901   0.017218   48.549  < 2e-16 ***
+instftyp9    0.486776   0.008096   60.127  < 2e-16 ***
+instftypA   -0.395756   0.095713   -4.135 3.55e-05 ***
+instftypN   -0.492003   0.010723  -45.883  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1100108  on 1527182  degrees of freedom
+Residual deviance: 1086225  on 1527170  degrees of freedom
+AIC: 1086251
+
+Number of Fisher Scoring iterations: 5
+
+
+[[29]] Rural/Urban
+
+glm(formula = alc_status ~ rural, family = "binomial", data = df)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.5157  -0.5157  -0.5157  -0.4133   2.2372  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -1.950216   0.002715  -718.2   <2e-16 ***
+ruralY      -0.466820   0.007375   -63.3   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1099871  on 1526943  degrees of freedom
+Residual deviance: 1095478  on 1526942  degrees of freedom
+  (239 observations deleted due to missingness)
+AIC: 1095482
+
+Number of Fisher Scoring iterations: 5
+

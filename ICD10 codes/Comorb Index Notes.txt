@@ -1,0 +1,144 @@
+> names_elix
+$`01`
+[1] "Congestive heart failure"
+
+$`02`
+[1] "Cardiac arrhythmias"
+
+$`03`
+[1] "Valvular disease"
+
+$`04`
+[1] "Pulmonary circulation disorders"
+
+$`05`
+[1] "Peripheral vascular disorders"
+
+$`06`
+[1] "Hypertension, combined"
+
+$`07`
+[1] "Paralysis"
+
+$`08`
+[1] "Other neurological disorders"
+
+$`09`
+[1] "Chronic pulmonary disease"
+
+$`10`
+[1] "Diabetes, uncomplicated"
+
+$`11`
+[1] "Diabetes, complicated"
+
+$`12`
+[1] "Hypothyroidism"
+
+$`13`
+[1] "Renal failure"
+
+$`14`
+[1] "Liver disease"
+
+$`15`
+[1] "Peptic ulcer disease excluding bleeding"
+
+$`16`
+[1] "HIV/AIDS"
+
+$`17`
+[1] "Lymphoma"
+
+$`18`
+[1] "Metastatic cancer"
+
+$`19`
+[1] "Solid tumor without metastasis"
+
+$`20`
+[1] "Rheumatoid arthritis/collagen vascular diseases"
+
+$`21`
+[1] "Coagulopathy"
+
+$`22`
+[1] "Obesity"
+
+$`23`
+[1] "Weight loss"
+
+$`24`
+[1] "Fluid and electrolye disorders"
+
+$`25`
+[1] "Blood loss anemia"
+
+$`26`
+[1] "Deficiency anemias"
+
+$`27`
+[1] "Alcohol abuse"
+
+$`28`
+[1] "Drug abuse"
+
+$`29`
+[1] "Psychoses"
+
+$`30`
+[1] "Depression"
+
+
+> names_charlson
+$`01`
+[1] "Myocardial Infarction"
+
+$`02`
+[1] "Congestive Heart Failure"
+
+$`03`
+[1] "Periphral Vascular Disease"
+
+$`04`
+[1] "Cerebrovascular Disease"
+
+$`05`
+[1] "Dementia"
+
+$`06`
+[1] "Chronic Pulmonary Disease"
+
+$`07`
+[1] "Connective Tissue Disease-Rheumatic Disease"
+
+$`08`
+[1] "Peptic Ulcer Disease"
+
+$`09`
+[1] "Mild Liver Disease"
+
+$`10`
+[1] "Diabetes without complications"
+
+$`11`
+[1] "Diabetes with complications"
+
+$`12`
+[1] "Paraplegia and Hemiplegia"
+
+$`13`
+[1] "Renal Disease"
+
+$`14`
+[1] "Cancer"
+
+$`15`
+[1] "Moderate or Severe Liver Disease"
+
+$`16`
+[1] "Metastatic Carcinoma"
+
+$`17`
+[1] "HIV/AIDS"
+
